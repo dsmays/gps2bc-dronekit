@@ -23,7 +23,7 @@ This guide uses the DroneKit SITL drone to provide an example for implementation
 ## Usage:
 To use within your own DroneKit software, you need to do a few things. Check out `dronekit-example.py` for an implementation example.
   1. Place `gps2BC.py` in your main software directory
-  1. Add `include gps2BC.py` in your main program
+  1. Add `include gps2BC` in your main program
   1. Add the following libraries into your main program:
 ```
 from time import sleep
