@@ -3,7 +3,7 @@
 This is software that interfaces with DroneKit, pulls GPS information, formats it into a NMEA-0183 GGA string, and serves it to Rajant Breadcrumbs via a TCP Server. The TCP server runs in a separate thread to allow for independant program flow from main DroneKit software, and is passed data via a Queue. 
 
 ## Quick Installation:
-This guide uses the DroneKit SITL drone to provide an example for implementation into your own DroneKit software. (**NOTE:** DroneKit SITL drone will only run on x86 devices! It will **not** work on ARM-based devices like a Raspberry Pi.)
+This guide uses the DroneKit SITL drone to provide an example for implementation into your own DroneKit software. (**NOTE:** DroneKit SITL drone will only run on x86 devices! It will **not** work on ARM-based devices like a Raspberry Pi. To test on such devices, you must use a real FCU.)
   1. [Install DroneKit and setup Python dependancies](https://dronekit-python.readthedocs.io/en/latest/guide/quick_start.html)
   1. Clone repo
   1. Ensure the network adapter of the device is set to an IP address in the range 10.x.x.x and Netmask 255.0.0.0
@@ -17,7 +17,8 @@ This guide uses the DroneKit SITL drone to provide an example for implementation
   1. Navigate to repo directory on device
   1. Run using the following command: `python3 dronekit-example.py`
   1. You should see the following output. First will be output from the SITL drone being initialized. The program will wait for a connection. Once connected, the program will print the connection address, which corresponds to the Breadcrumb that you setup. The NMEA strings that are generated and sent are printed to the console. *Note:* Upon initial connection, the Breadcrumb will disconnect and reconnect once. That is normal.
-  ![gps2BC Terminal Output](gps2BC_output.png) 
+  
+![gps2BC Terminal Output](gps2BC_output.png) 
   
 ## Usage:
 To use within your own DroneKit software, you need to do a few things. Check out `dronekit-example.py` for an implementation example.
