@@ -48,4 +48,4 @@ gps2BC.convertFrameNMEA(gps2BC.grabFrameNav(vehicle), nmea_class)	#Gather dronek
 ```
 q.put(nmea_class.generateNMEA())			#Generate final NMEA string from nmeaFrame class and pop onto queue
 ```
-  7. gps2BC will use whatever GPS data it currently has to send out NMEA strings to the Breadcrumb at a rate of 1Hz. That is, your program does not have to update the data for the TCP server at any particular rate for it to continue working. However, a minimum update rate of 1Hz is recommended.
+  7. gps2BC will use whatever GPS data it currently has to send out NMEA strings to the Breadcrumb at a rate of 1Hz. That is, your program does not have to update the data for the TCP server at any particular rate for it to continue working. However, an update rate of 1Hz is recommended.
