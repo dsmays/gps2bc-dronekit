@@ -12,8 +12,8 @@ This guide uses the DroneKit SITL drone to provide an example for implementation
       1. Under "General", there is a section titled "External GPS"
       1. Set *GPS Device* to "TCP/IP"
       1. Set *External GPS IP* to the IP address of your device
-      1. Save and reboot the Breadcrumb
-      ![BC|Commander Config Screen](BCConfig.png)
+      1. Save and reboot the Breadcrumb    
+  ![BC|Commander Config Screen](BCConfig.png)
   1. Navigate to repo directory on device
   1. Run using the following command: `python3 dronekit-example.py`
   1. You should see the following output. First will be output from the SITL drone being initialized. The program will wait for a connection. Once connected, the program will print the connection address, which corresponds to the Breadcrumb that you setup. The NMEA strings that are generated and sent are printed to the console. *Note:* Upon initial connection, the Breadcrumb will disconnect and reconnect once. That is normal.
