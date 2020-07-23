@@ -21,7 +21,7 @@ This guide uses the DroneKit SITL drone to provide an example for implementation
 ![gps2BC Terminal Output](gps2BC_output.png) 
 
 ## Testing:
-  1. You can connect to the SITL using GCS software via TCP using `127.0.0.0:5763`
+  1. Once started, you can connect to the SITL using GCS software via TCP using `127.0.0.0:5763`
   1. Create a flight plan, upload, and take-off
   1. In BC|Commander, go to Topology View and select the Map mode.
   1. The position of your radio node should move and correlate with the position of the vehicle in the GCS
